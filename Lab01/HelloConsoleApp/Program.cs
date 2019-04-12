@@ -22,20 +22,26 @@ namespace HelloConsoleApp
             Console.Write("Podaj wiek: ");
             int wiek = Convert.ToInt32(Console.ReadLine());
 
+            
+            if (wiek < 0)
+
+            {
+                Console.WriteLine("Błędne dane!");
+            }
 
 
-            if (wiek < 67)
+            else if (wiek < 67)
 
             {
                 Console.WriteLine("Do emerytury zostało Ci {0} lat", 67 - wiek);
             }
 
+        
+
             else
 
             {
-
                 Console.WriteLine("Jesteś emerytem");
-
             }
 
 
